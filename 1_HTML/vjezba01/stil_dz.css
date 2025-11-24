@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(241, 244, 245);
+}
+
+h1{
+    color: #17335a;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-right: 45px;
+}
+
+h2{
+    color: #e93333;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    padding-right: 380px;
+}
+
+#prvitekst{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(88, 88, 88);
+    font-weight: 500;
+    text-align: center;
+    padding-right: 488px;
+    line-height: 2;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: #ffffff;
+    height: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #dbdbdb;
+}
+
+.poruka{
+    text-align: center;
+    padding-right: 40px;
+    color: rgb(105, 103, 103);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+pre{
+    font-family: sans-serif;
+    line-height: 1.7;
+}
+
+ul{
+    list-style: none;
+    font-family: sans-serif;
+    line-height: 2;
+    padding: 0;
+
+    
+}
+
+ul li::before{
+    content: '✅';
+}
+
+.elementi{
+    color: #383535;
+    background-color: rgb(230, 225, 225);
+    border-radius: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: 500;
+}
+
+
+.crvena{
+    color: #e93333;
+}
+
+#podvuceno{
+    text-decoration-line: underline;
+    text-decoration-color: #ee0b0b;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    
+}
+
+#povecano{
+    font-size: 35px;
+}
+
+.ff{
+    color: #ff6600;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
