@@ -1,0 +1,237 @@
+:root{
+    --boja-pozadine: #d0d1d1;
+    --boja-naslova: #112142;
+    --naglasena-boja: #c98c52;
+    --prva-boja: #848385;
+    --druga-boja: #df7804;
+}
+
+body{
+    background-color: var(--boja-pozadine);
+    font-family: sans-serif;
+    line-height: 1.6;
+
+}
+
+
+main{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+hr{
+    color: var(--prva-boja);
+    height: 0.1px;
+}
+
+section{
+    margin-bottom: 30px;
+}
+
+.container{
+    height: auto;
+    
+    width: 90%;          
+    max-width: 1200px;
+
+    margin: 10px auto;
+    background-color: white;
+
+    border-radius: 0.5rem;
+
+    outline-style: solid;
+    outline-width: 0.5px;
+    outline-color: rgb(170, 170, 170);
+}
+.container hr{
+    color: var(--prva-boja);
+    height: 0.1px;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+header{
+    padding-top: 5px;
+    text-align: center;
+}
+header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    color: var(--boja-naslova);
+}
+header h2{
+    font-size: 35px;
+    color: var(--prva-boja);
+    font-family: 'Playfair Display', serif;
+    text-decoration-line: underline;
+    text-decoration-color: var(--naglasena-boja);
+    text-decoration-skip-ink: none;
+    text-decoration-style: solid;
+    text-underline-offset: 20px;
+}
+.bigger{
+    font-size: 40px;
+}
+
+.uvod{
+    margin-top: 80px;
+}
+.uvod p{
+    font-size: 25px;
+    text-align: justify;
+}
+.uvod mark{
+    background-color: #ffe6b0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0.2rem;
+    font-weight: 540;
+}
+.uvod span{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 2px;
+    text-decoration-color: #3d3c3d;
+}
+
+.okvir{
+    width: 100%;         
+    max-width: 950px;   
+    margin: 0 auto;      
+    height: auto;   
+    text-align: center;
+    background-color: #f7f7f7;
+    outline-style: solid;
+    outline-width: 0.5px;
+    outline-color: rgb(236, 236, 236);
+    border-radius: 0.5rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    line-height: 10px;
+    color: var(--prva-boja);
+}
+.okvir img{
+    height: auto;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.nastavak p{
+    font-size: 25px;
+    text-align: justify;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+strong{
+    color: var(--druga-boja);  
+}
+
+.html_dio dl{
+    background-color: #fdfdfd;
+    font-size: 24px;
+    border-inline-start: 8px solid #3168d6;
+    padding-inline-start: 95px;
+    line-height: 45px;
+}
+
+.html_dio dl dd{
+    margin: 0;
+    padding: 0;
+
+}
+
+.kod_dio p{
+    font-size: 25px;
+
+}
+.kod_dio span{
+    font-family: "Source Code Pro", monospace;
+}
+.kod_dio pre{
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #333835;
+    color: #cac8c8;
+    border-inline-start:10px solid #f5cf7c;
+    padding-inline-start: 20px;
+    border-radius: 0.5rem;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pojmovi dl {
+    background: #eef2f4;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.pojmovi .row {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.pojmovi dt {
+    font-weight: bold;
+    color: #0c70ba;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pojmovi dd {
+    font-size: 25px;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+blockquote{
+    font-size: 30px;
+    background-color: #e6bfbf;
+    border-inline-start: 7px solid #a12828;
+    padding-inline-start: 15px;
+    margin-left: 0;  
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;   
+    font-family: serif; 
+    font-weight: 500;
+}
+cite{
+    font-size: 30px;
+    font-family: serif;
+    font-weight: 500;
+}
+
+.zavrsni_dio p{
+    font-size: 25px;
+}
+.dot {
+    border-top: 11px dotted #a12828; 
+    padding-top: 1px;
+}
+.zavrsni_dio rt{
+    color: var(--prva-boja);
+    font-size: 17px;
+}
+
+footer{
+    font-size: 20px;
+}
+
+a[href^="mailto"] {
+    color: rgb(64, 64, 201);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--druga-boja);
+    text-decoration-skip-ink: none;
+    text-underline-offset: 5px;
+    
+}
