@@ -1,0 +1,38 @@
+:root{
+    --pozadinska-boja: #f0f1f0;
+    --bijela-boja: white; 
+    --boja-tablice1: #f8f8f8;
+    --boja-tablice2: #f0f0f0;
+}
+
+body{
+    background-color: var(--pozadinska-boja);
+}
+
+.container{
+    background-color: var(--bijela-boja);
+    justify-content: center;
+    margin: 0 auto;
+}
+
+table, td, th {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+caption{
+    text-align: left;
+}
+
+.container{
+    padding: 10px;
+    width: 50%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+label{
+    
+}

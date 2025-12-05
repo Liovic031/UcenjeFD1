@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Sigurna Prijava</legend>
+                <br>
+
+                <label for="username">Korisničko ime</label>
+                <input type="text" name="Username" placeholder="admin">
+                <br>
+                <br>
+                <label for="password">Lozinka</label>
+                <input type="password" name="Lozinka" id="l1" placeholder="●●●●●●">
+                <br>
+                <br>
+                <label for="checkbox">Zapamti uređaj</label>
+                <input type="checkbox" name="ZapamtiU" id="u1">
+                <br>
+                <br>
+
+                <button>Prijavi se</button>
+
+
+            </fieldset>
+        </form>
+    </div>
+
+    <table>
+        <caption>Nedavne aktivnosti prijave</caption>
+        <colgroup>
+            <col style="width: 40%;">
+            <col style="width: 30%;">
+            <col style="width: 30%;">
+        </colgroup> 
+
+        <thead>
+            <tr>
+                <th>ip adresa</th>
+                <th>vrijeme</th>
+                <th>status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>192-168-1-15</td>
+                <td>12:45</td>
+                <td>Uspjeh</td>
+            </tr>
+            <tr>
+                <td>10.0.0.52</td>
+                <td>Jučer</td>
+                <td>Greška</td>
+            </tr>
+            <tr>
+                <td>88.102.x.x</td>
+                <td>01.12.</td>
+                <td></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Prikaz zadnja 3 pokušaja</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
