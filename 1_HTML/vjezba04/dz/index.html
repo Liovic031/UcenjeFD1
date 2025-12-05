@@ -7,23 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="ikonica">🔒</div>
     <div class="container">
-        <form action="" method="post">
+        <form action="" method="get">
             <fieldset>
                 <legend>Sigurna Prijava</legend>
                 <br>
 
-                <label for="username">Korisničko ime</label>
+                <label class="unos1" for="username">Korisničko ime</label>
                 <input type="text" name="Username" placeholder="admin">
-                <br>
-                <br>
-                <label for="password">Lozinka</label>
+
+                <label class="unos1" for="password">Lozinka</label>
                 <input type="password" name="Lozinka" id="l1" placeholder="●●●●●●">
                 <br>
-                <br>
-                <label for="checkbox">Zapamti uređaj</label>
                 <input type="checkbox" name="ZapamtiU" id="u1">
-                <br>
+                <label class="unos2" for="checkbox">Zapamti uređaj</label>
                 <br>
 
                 <button>Prijavi se</button>
@@ -69,9 +67,7 @@
 
         <tfoot>
             <tr>
-                <td>Prikaz zadnja 3 pokušaja</td>
-                <td></td>
-                <td></td>
+                <td colspan="3">Prikaz zadnja 3 pokušaja</td>
             </tr>
         </tfoot>
 
