@@ -91,5 +91,55 @@
             </tr>
         </tfoot>
     </table>
+
+    <div class="upit">
+        <h2>Pošaljite upit</h2>
+        <form action="https:/origo.hr" method="get">
+            <fieldset>
+                <legend>KONTAKT PODACI</legend>
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" name="i" id="ime" placeholder="Ivan Horvat">
+
+                <label for="email">Email adresa:</label>
+                <input type="text" name="e" id="email" placeholder="ivan@primjer.hr">
+
+                <label for="vrste_radova">Vrsta radova:</label>
+                <input list="svi_radovi" id="vrste_radova" name="vrste_radova">
+                <datalist id="svi_radovi">
+                        <option value="Bušenje zida">
+                        <option value="Bušenje betona">
+                        <option value="Rezanje zida">
+                        <option value="Odvoz šute">
+                </datalist>
+
+                <label for="opis_posla">Opis posla:</label>
+                <textarea id="opis_posla" name="opis_posla"></textarea>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="c[]" id="c1">
+                    <label for="c1">Hitna intervencija</label>
+                </div>
+            </fieldset>
+
+            <div class="termini">
+                <label>Opterećenost termina:</label>
+                <meter min="0" max="100" low="30" high="80" optimum="90" value="80"></meter>
+                <p>Trenutno imamo veliku popunjenost termina.</p>
+            </div>
+
+            <button type="submit">POŠALJI UPIT</button>
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <h4>Bušenje Kamena d.o.o.</h4>
+            <p>Industrijska cesta 5</p>
+            <p>10000 Zagreb, Hrvatska</p>
+            <p>Kontakt: <a href="mailto:info@busenjekamena.hr">info@busenjekamena.hr</a></p>
+       </div> 
+       <hr>
+        <p class="prava">&copy; 2024 Bušenje Kamena. Sva prava pridržana.</p>
+    </footer>
 </body>
 </html>
