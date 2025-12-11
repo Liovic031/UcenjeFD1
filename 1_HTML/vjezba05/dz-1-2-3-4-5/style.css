@@ -1,0 +1,230 @@
+body{
+    background-color: rgb(26, 26, 26);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(teretana.webp);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 150px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(22, 22, 22, 0.911);
+    padding-left: 10px 30px;
+    box-sizing: border-box;
+}
+nav p{
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: rgb(155, 235, 36);
+}
+ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding-right: 20px;
+}
+a{
+    text-decoration-line: none; 
+    color: #fff;
+    font-size: 15px;
+} 
+
+header div{
+    text-align: center;
+    margin-top: 150px;
+}
+
+header div h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+header div button{
+    padding: 12px 25px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(155, 235, 36);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+h2{ 
+    text-align: center;
+    color: rgb(155, 235, 36);
+    font-size: 40px;
+}
+hr{
+    width: 5%;
+    border-radius: 1rem;
+    border: 2px solid #fff;
+}
+#usluge{
+    margin: 50px auto;
+}
+.kartice{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.kartice div{
+    background-color: rgb(39, 39, 39);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;  /*vertikalno*/
+    align-items: center;      /*horizontalno*/
+    text-align: center;
+
+}
+
+
+
+#paketi{
+    background-color: rgb(39, 39, 39);
+    padding: 50px 0px;
+}
+caption{
+    padding-top: 50px;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    width: 70%;
+}
+thead th{
+    background-color: rgb(155, 235, 36);
+    text-transform: uppercase;
+    padding: 20px 0px;
+    color: rgb(39, 39, 39);
+    border-bottom: 1px solid rgb(77, 77, 77);
+}
+tbody tr td{
+    background-color: rgb(48, 48, 48);
+    padding: 25px 25px;
+    border-bottom: 1px solid rgb(77, 77, 77);
+}
+tfoot tr td{
+    background-color: rgb(48, 48, 48);
+    padding: 25px 25px;
+}
+tfoot tr td:first-child {
+    border-bottom-left-radius: 0.5rem;
+}
+
+tfoot tr td:last-child {
+    border-bottom-right-radius: 0.5rem;
+}
+
+
+
+#video {
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    padding: 4rem;           
+}
+#video iframe {
+    width: 100%;        
+    border: none;      
+}
+
+
+
+.podaci {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    max-width: 1500px;             
+    margin: 0 auto;                  
+    padding: 2rem 1rem;                 
+    gap: 20px;                     
+}
+.info {
+    flex: 1 1 45%;                  
+            
+}
+
+.forma {
+    flex: 1 1 50%;                 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;          
+}
+
+input[type="text"], 
+input[type="email"], 
+input[list="ciljevi"], 
+textarea {
+    background-color: rgb(48, 48, 48);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #fff;
+    width: 100%;        
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.db {
+    padding: 12px 25px;
+    border-radius: 2rem;
+    border: none;
+    display: inline-block;
+    background-color: rgb(155, 235, 36);
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;       
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(130, 210, 30); 
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: rgb(156, 155, 155);
+    border-top: 2px solid rgb(130, 210, 30);
+    padding: 50px 0px;
+}
+footer a{
+    color: rgb(156, 155, 155);
+}
+footer a:hover {
+    color: gray; 
+}
