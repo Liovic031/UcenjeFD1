@@ -1,0 +1,87 @@
+body{
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+
+h1{
+    color: rgb(8, 31, 109);
+}
+h3{
+    color: gray;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    width: 190px;
+    height: 254px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 130%;
+    background-image: linear-gradient(180deg, #ff00c8, cyan);
+    animation: animate 3s linear infinite;
+    transition: all .3s linear;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: #141414;
+    border-radius: 15px;
+}
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+div{
+    margin: 100px auto;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 400px;
+    max-height: 250px;
+    padding: 20px 50px 50px;
+    border-radius: 0.5rem;
+
+    position: relative;
+    overflow: hidden;
+}
+div::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200%; 
+    margin: -90px -95px;
+    background-image: linear-gradient(180deg, #ff00c8, cyan);
+    animation: animate 3s linear infinite;
+    transition: all .3s linear;
+}
+div *{
+    position: relative;
+    z-index: 10;
+}
+div::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: #fff; 
+    border-radius: 15px;
+    z-index: 5;      
+}
