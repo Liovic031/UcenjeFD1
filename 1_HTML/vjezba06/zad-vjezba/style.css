@@ -110,3 +110,19 @@ button{
     border: none;
     border-radius: 0.5rem;
 }
+
+footer{
+    background-color: rgb(59, 59, 59);
+    text-align: center;
+    color: rgb(156, 155, 155);
+    border-top: 2px solid rgb(238, 122, 14);
+    padding: 50px 0px;
+}
+
+footer p a{
+    text-decoration-line: none;
+    color: rgb(156, 155, 155);
+}    
+footer p a:hover {
+    color: gray; 
+}
