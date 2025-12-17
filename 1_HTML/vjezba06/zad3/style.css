@@ -30,6 +30,7 @@ form{
 label{
     font-weight: bold;
     color: #3e3d3d;
+    padding-bottom: 5px;
 }
 
 input[type="text"], input[type="email"], select{
@@ -40,17 +41,46 @@ input[type="text"], input[type="email"], select{
 }
 
 h1{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     border-bottom: 2px solid blue;
-    max-width: 162px;
+    max-width: 135px;
     padding-bottom: 10px;
 }
 
 input[type="submit"]{
-    background-color: green;
+    background-color: rgb(29, 160, 29);
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     padding: 8px;
     max-width: 165px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: rgb(6, 95, 228);
+    padding: 10px;
+    color: #fff;
+}
+
+
+tbody tr:nth-child(odd){
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+tbody tr td{
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.zadnji td{
+    border-bottom: none;
 }
