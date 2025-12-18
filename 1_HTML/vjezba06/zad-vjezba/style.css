@@ -37,7 +37,7 @@ ul li a{
 }
 
 #uvodni_dio{
-    background-image: linear-gradient(rgba(0,0,0,0.4)), url(slike/banner.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.4)), url(slike/banner.webp);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +46,7 @@ ul li a{
     height: 400px;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(218, 218, 218);
 }
 #uvodni_dio h1{
     font-size: 40px;
