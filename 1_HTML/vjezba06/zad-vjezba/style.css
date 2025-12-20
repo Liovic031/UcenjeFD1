@@ -126,3 +126,46 @@ footer p a{
 footer p a:hover {
     color: gray; 
 }
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.forma{
+    width: 23%;
+    min-width: 300px;
+    margin: 50px auto;
+    background-color: rgb(32, 32, 32);
+    border-radius: 1rem;
+    padding: 30px 15px;
+    color: white;
+}
+.review p{
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 15px;
+    padding: 0px 15px;
+    max-width: 400px;
+}
+
+button{
+    background-color:rgb(197, 106, 20);
+    color: white;
+    border: none;
+    width: 130px;
+    border-radius: 0.5rem;
+    padding: 10px 5px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+input[type='text'], input[type='password'], select, textarea{
+    border-radius: 0.5rem;
+    padding: 10px 5px;
+    width: 90%;
+    border: none;
+}

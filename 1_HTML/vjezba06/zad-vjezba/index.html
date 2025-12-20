@@ -86,7 +86,7 @@
                 <object data="https://placehold.co/300x200" type="image/png"></object>
                 <hr>
                 <h3>Hotel Adria</h3>
-                <p>Dubtovnik, Hrvatska</p>
+                <p>Dubrovnik, Hrvatska</p>
                 <button>Rezerviraj</button>
             </div>
             <div>
@@ -97,10 +97,43 @@
                 <button>Rezerviraj</button>
             </div>
         </div>
-        <footer>
-            <p>&copy; Hoteli.com Sva prava pridržana.</p>
-            <p>Kontaktirajte nas: <a href="mailto:info@hoteli.com">info@hoteli.com</a></p>
-        </footer>
     </section>
+    <section class="review">
+        <h2>Ocijenite nas</h2>
+        <div class="forma">
+            <form action="#" method="get">
+                <label for="username">Ime i Prezime:</label>
+                <input type="text" name="username" id="username">
+
+                <label for="hotels">Odaberite hotel:</label>
+                <select name="hotels" id="hotels">
+                    <option value="1">Hotel Osijek</option>
+                    <option value="2">Sheraton Hotel</option>
+                    <option value="3">Hotel Hilton</option>
+                    <option value="4">Hotel Ambasador</option>
+                    <option value="5">Hotel Adria</option>
+                    <option value="6">A'mare Hotel</option>
+                </select>
+                
+                <label for="grade">Ocjena:</label>
+                <select name="grade" id="grade">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                
+                <label for="comment">Komentar:</label>
+                <textarea name="comment" id="comment"></textarea>
+                
+                <button type="submit">Pošaljite</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Hoteli.com Sva prava pridržana.</p>
+        <p>Kontaktirajte nas: <a href="mailto:info@hoteli.com">info@hoteli.com</a></p>
+    </footer>
 </body>
 </html>
