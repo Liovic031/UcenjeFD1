@@ -141,7 +141,7 @@ textarea {
     padding: 30px 15px;
     color: white;
 }
-.review p{
+#review p{
     color: white;
 }
 form{
@@ -163,9 +163,31 @@ button{
     font-size: 15px;
     margin-top: 20px;
 }
+
 input[type='text'], input[type='password'], select, textarea{
     border-radius: 0.5rem;
     padding: 10px 5px;
     width: 90%;
     border: none;
+}
+#cijene{
+    padding-bottom: 50px;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid rgb(197, 106, 20);
+    width: 70%;
+}
+table thead th{
+    background-color: rgb(197, 106, 20);
+    color: white;
+    border-bottom: rgb(197, 106, 20);
+    padding: 20px;
+    text-align: left;
+}
+table tbody td{
+    color: white;
+    border-bottom: 1px solid rgb(197, 106, 20);
+    padding: 20px;
 }
