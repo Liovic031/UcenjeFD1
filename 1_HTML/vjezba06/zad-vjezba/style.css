@@ -133,8 +133,8 @@ textarea {
 }
 
 .forma{
-    width: 23%;
     min-width: 300px;
+    max-width: 400px;
     margin: 50px auto;
     background-color: rgb(32, 32, 32);
     border-radius: 1rem;
@@ -176,18 +176,35 @@ input[type='text'], input[type='password'], select, textarea{
 table{
     margin: 0 auto;
     border-collapse: collapse;
-    border: 1px solid rgb(197, 106, 20);
     width: 70%;
 }
 table thead th{
     background-color: rgb(197, 106, 20);
     color: white;
-    border-bottom: rgb(197, 106, 20);
     padding: 20px;
     text-align: left;
+}
+table thead th:first-child{
+    border-top-left-radius: 0.5rem;
+}
+table thead th:last-child{
+    border-top-right-radius: 0.5rem;
 }
 table tbody td{
     color: white;
     border-bottom: 1px solid rgb(197, 106, 20);
     padding: 20px;
+    background-color: rgb(48, 48, 48);
 }
+table tfoot td{
+    color: white;
+    padding: 20px;
+    background-color: rgb(48, 48, 48);
+}
+table tfoot td:first-child{
+    border-bottom-left-radius: 0.5rem;
+}
+table tfoot td:last-child{
+    border-bottom-right-radius: 0.5rem;
+}
+
