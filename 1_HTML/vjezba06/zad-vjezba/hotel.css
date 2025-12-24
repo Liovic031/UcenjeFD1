@@ -1,0 +1,56 @@
+.hotel {
+    margin: 100px auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background-color: rgb(238, 122, 14);
+}
+.hotel h3{
+    font-size: 35px;
+}
+.hotel p{
+    font-size: 25px;
+    width: 90%;
+}
+.hotel label{
+    font-size: 25px;
+    line-height: 10px;
+}
+select{
+    margin: 10px auto;
+    font-size: 25px;
+}
+button{
+    font-size: 25px;
+    color: black;
+    background-color: rgb(170, 92, 19);
+}
+.slika {
+    flex: 1 1 0;
+    display: block;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.slika img {
+    width: 90%;
+    height: auto;
+}
+
+.opis {
+    flex: 1;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.opis h3 {
+    margin-top: 50px auto;
+}
+
+@media (max-width: 768px) {
+    .hotel {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Osijek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+
+    <nav>
+        <p>HOTELI</p>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="#hoteli">Hoteli</a></li>
+            <li><a href="#cijene">Cijene</a></li>
+            <li><a href="#review">Recenzije</a></li>
+            <li><a href="login.html">Prijava</a></li>
+        </ul>
+    </nav>
+
+    <section class="hotel">
+        <div class="slika">
+            <img src="https://placehold.co/800x500" alt="Hotel Osijek">
+        </div>
+
+        <div class="opis">
+            <h3>Hotel Osijek</h3>
+            <p><strong>Osijek, Hrvatska</strong></p>
+
+            <p>
+                Hotel Osijek je moderno opremljen hotel smješten u samom srcu Osijeka,
+                uz šetnicu na obali rijeke Drave, samo nekoliko minuta hoda od starog
+                dijela grada i glavnog gradskog trga.
+                <br><br>
+                Hotel nudi prostrane i klimatizirane sobe s lijepim pogledom,
+                vrhunsku gastronomsku ponudu, besplatan Wi-Fi te wellness i fitness sadržaje.
+            </p>
+
+            <label for="soba">Tip sobe:</label>
+            <select name="soba" id="soba">
+                <option value="1">Single</option>
+                <option value="2">Double</option>
+                <option value="3">Suite</option>
+            </select>
+
+            <br><br>
+            <button type="submit">Rezerviraj</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Hoteli.com Sva prava pridržana.</p>
+        <p>Kontaktirajte nas: <a href="mailto:info@hoteli.com">info@hoteli.com</a></p>
+    </footer>
+
+</body>
+</html>
