@@ -1,0 +1,191 @@
+:root{
+    --boja-pozadine: #f7f5e6; 
+    --prva-boja: #d44e10;
+    --druga-boja: #292c3a;
+}
+body{
+    background-color: var(--boja-pozadine);
+    font-family: sans-serif;
+    margin: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--prva-boja);
+    padding: 0 40px;
+}
+nav h2{
+    padding-left: 0;
+    color: white;
+    font-size: 20px;
+}
+nav h2::before{
+    content: '🍽️';
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 15px;
+    padding-right: 0;
+}
+nav ul li a{
+    text-decoration-line: none;
+    color: white;
+}
+
+#uvod{
+    margin: 100px auto;
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+    color: var(--prva-boja);
+    font-size: 40px;
+}
+#uvod p{
+    color: rgb(94, 93, 93);
+}
+
+#meni{
+    width: 69%;
+    margin: 0 auto;
+}
+h3{
+    border-inline-start: 5px solid var(--prva-boja);
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.kartice{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.kartice div{
+    border-radius: 1rem;
+    border: 1px solid rgb(219, 219, 219);
+    max-width: 300px;
+    height: 350px;
+    overflow: hidden;
+    background-color: white;
+    
+}
+.cijena{
+    color: var(--prva-boja);  
+    font-weight: 600;
+    text-align: right; 
+    padding-right: 10px;
+    line-height: 5px;
+}
+.kartice div h4{
+    line-height: 1px;
+    padding-left: 10px;
+}
+.kartice div p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#info{
+    background-color: white;
+    padding-top: 20px;
+    width: 69%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    border-radius: 0.5rem;
+}
+#info p{
+    padding-left: 65px;
+}
+#info h3{
+    border-inline-start: 5px solid var(--prva-boja);
+    text-align: left;
+    margin-left: 20px;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+table{
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+table thead tr{
+    background-color: var(--druga-boja);
+    color: white;
+}
+table thead tr th{
+    padding: 15px 5px;
+}
+tbody tr{
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.srednji{
+    background-color: rgb(246, 246, 248);
+}
+tbody tr td{
+    padding: 15px 5px;
+}
+#rezervacija{
+    background-color: var(--druga-boja);
+    padding-top: 20px;
+    width: 69%;
+    margin: 50px auto;
+    padding-bottom: 20px;
+    border-radius: 0.5rem;
+}
+#rezervacija h3{
+    border-inline-start: 5px solid white;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 25px;
+    padding-left: 5px;
+}
+.forma{
+    padding-bottom: 20px;
+    width: 95%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 50px;
+    gap: 10px;
+}
+label{
+    color: white;
+}
+input[type='text'], select, textarea{
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: none;
+}
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+button{
+    padding: 10px;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: var(--prva-boja);
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+}
+
+

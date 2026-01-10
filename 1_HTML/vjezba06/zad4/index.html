@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>DOMAĆI KUTAK</h2>
+        <ul>
+            <li><a href="#meni">Meni</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#rezervacija">Rezervacija</a></li>
+        </ul>
+    </nav>
+    <section id="uvod">
+        <h1>Okusi tradicije na tanjuru</h1>
+        <p>Svježe namirnice, bakini recepti i ugodna atmosfera.</p>
+    </section>
+    <section id="meni">
+        <h3>Današnji specijaliteti</h3>
+        <div class="kartice">
+            <div>
+                <object data="https://placehold.co/300x200" type="image/png"></object>
+                <p class="cijena">12.00 €</p>
+                <h4>Lovački gulaš</h4>
+                <p>S domaćim njokima i čašom crnog vina.</p>
+            </div>
+            <div>
+                <object data="https://placehold.co/300x200" type="image/png"></object>
+                <p class="cijena">10.50 €</p>
+                <h4>Piletina u umaku</h4>
+                <p>Grill pileća prsa s umakom od gljiva i rižom.</p>
+            </div>
+            <div>
+                <object data="https://placehold.co/300x200" type="image/png"></object>
+                <p class="cijena">8.00 €</p>
+                <h4>Vege tanjur</h4>
+                <p>Sezonsko povrće sa žara, humus i tostirani kruh.</p>
+            </div>
+        </div>
+    </section>
+    <section id="info">
+        <h3>Nutritivne Vrijednosti</h3>
+        <p>Brinemo o vašem zdravlju. Pogledajte detalje za današnja jela.</p>
+        <table>
+            <colgroup>
+                    <col style="width: 25%;">
+                    <col style="width: 25%;">
+                    <col style="width: 25%;">
+                    <col style="width: 25%;">
+                </colgroup>
+            <thead>
+                <tr>
+                    <th>Jelo</th>
+                    <th>Kalorije (kcal)</th>
+                    <th>Proteini (g)</th>
+                    <th>Alergeni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lovački Gulaš</td>
+                    <td>650</td>
+                    <td>35</td>
+                    <td>Gluten, Jaja</td>
+                </tr>
+                <tr class="srednji">
+                    <td>Piletina u umaku</td>
+                    <td>520</td>
+                    <td>40</td>
+                    <td>Laktoza</td>
+                </tr>
+                <tr>
+                    <td>Vege Tanjur</td>
+                    <td>380</td>
+                    <td>15</td>
+                    <td>Sezam</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="rezervacija">
+        <h3>Rezervirajte Stol</h3>
+        <div class="forma">
+            <form action="#" method="get">
+                <label for="ime">Vaše Ime:</label>
+                <input type="text" id="ime" placeholder="Ivan Horvat">
+                <label for="broj">Broj osoba:</label>
+                <select name="broj" id="broj">
+                    <option value="1">1 Osoba</option>
+                    <option value="2">2 Osobe</option>
+                    <option value="3">3 Osobe</option>
+                    <option value="4">4 Osobe</option>
+                    <option value="5">5 Osoba</option>
+                </select>
+                <label for="napomena">Napomena:</label>
+                <textarea id="napomena" placeholder="Npr. rođendanska proslava..."></textarea>
+                <button type="submit">Potvrdi Rezervaciju</button>
+            </form>
+        </div>
+        
+    </section>
+
+</body>
+</html>
