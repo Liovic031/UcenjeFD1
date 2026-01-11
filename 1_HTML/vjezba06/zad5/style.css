@@ -1,0 +1,184 @@
+:root{
+    --prva-boja: #0E172A;
+    --druga-boja: #00D4FE;
+    --treca-boja: #1E293B;
+}
+
+
+body{
+    background-color: var(--prva-boja);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0px 35px;
+    border-bottom: 1px solid rgb(36, 36, 36);
+    align-items: center;
+
+}
+nav h2{
+    color: var(--druga-boja);
+    font-size: 20px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration-line: none;
+    color: white;
+}
+
+
+#uvod{
+    margin: 80px auto;
+    text-align: center;
+}
+h1{
+    font-size: 45px;
+    line-height: 35px;
+}
+#uvod p{
+    color: rgb(137, 137, 139);
+    line-height: 25px;
+}
+button{
+    padding: 13px 30px;
+    color: var(--prva-boja);
+    background-color: var(--druga-boja);
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 5px auto;
+}
+
+
+#vjestine{
+    margin: 80px auto;  
+}
+h3{
+    font-size: 25px;
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: var(--druga-boja);
+    text-underline-offset: 20px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+}
+.container div{
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 0.5rem;
+    background-color: var(--treca-boja);
+    height: 125px;
+    text-align: center;
+    padding: 0px 20px;
+    
+}
+.container div h4{
+    color: var(--druga-boja);
+    line-height: 10px;
+}
+.container div p{
+    color: white;
+    width: 250px;
+    line-height: 25px;
+}
+
+
+#projekti{
+    margin: 80px auto;
+}
+.okvir{
+    background-color: var(--treca-boja);
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius: 0.5rem;
+}
+h5{
+    color: white;
+    font-size: 15px;
+    line-height: 1px;
+}
+.okvir p{
+    line-height: 1px;
+    color: rgb(137, 137, 139);
+}
+video{
+    margin: 20px auto;
+}
+.forma{
+    width: 500px;
+    height: 300px;
+    padding: 0px 10px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: -10px auto;
+}
+textarea{
+    resize: vertical;
+    min-height: 100px;
+    max-height: 150px;
+}
+input[type='text'], input[type= 'email'], textarea{
+    padding: 10px;
+    background-color: var(--treca-boja);
+    color: rgb(137, 137, 139);
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 0.5rem;
+}
+button[type= 'submit']{
+    width: 100%;
+}
+
+
+footer{
+    text-align: center;
+    color: rgb(137, 137, 139); 
+    padding-top: 100px;
+   
+}
+hr{
+    background-color: rgb(137, 137, 139);
+    height: 1px;
+    border: none;
+    
+}
+span::before{
+    content: '❤️';
+}
