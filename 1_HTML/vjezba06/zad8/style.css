@@ -1,0 +1,103 @@
+:root{
+    --plava-boja: #0077fe;
+}
+body{
+    background-color: #f1f2f7;
+    margin: 0; 
+}
+p{
+    font-family: sans-serif;
+}
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'a a'
+    'b c'
+    'd d';
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.naslov, .tekst, .info, .autor{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 30px;
+}
+
+
+.naslov{
+    grid-area: a;
+    padding-right: 150px;
+}
+.tag{
+    color: var(--plava-boja);
+    font-size: 10px;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 5px;
+}
+h2{
+    font-size: 50px;
+    line-height: 1px;
+    color: var(--plava-boja);
+}
+.naslov p{
+    line-height: 25px;
+    color: #686868;
+}
+
+
+.tekst{
+    grid-area: b;
+    line-height: 20px;
+}
+blockquote{
+    font-weight: 700;
+    border-inline-start: 4px solid var(--plava-boja);
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.info{
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+    background-color: #f5f5f5;
+}
+h3{
+    font-size: 18px;
+}
+.info div h4{
+    font-size: 20px;
+    color: var(--plava-boja);
+    font-weight: bolder;
+}
+.info div p{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.info div{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 5px 20px;
+    
+}
+
+
+.autor{
+    grid-area: d;
+    color: #686868;
+    text-align: center;
+    padding: 5px;
+}
