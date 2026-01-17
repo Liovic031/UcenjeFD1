@@ -1,0 +1,22 @@
+nav{
+    background-color: #2E4254;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration-line: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px 30px;
+}
+nav ul li.trenutna a {
+    background-color: #1CBB9D;
+}

@@ -1,0 +1,80 @@
+/* SNIJEG EFEKT */
+html {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+body {
+  background: transparent;
+  overflow-x: hidden;
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+}
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+/* SVE OSTALO */
+#page {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* FONT */
+@font-face{
+    font-family: 'Monsterrat';
+    src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
+body{
+  font-family: 'Monsterrat', 'Arial', sans-serif;
+}
+
+
+/* INDEX.HTML */
+
+.uvod{
+  background-color: #2E4254;
+  text-align: center;
+  padding: 10px;
+}
+#glavni_dio{
+  text-align: center;
+  margin: 50px auto;
+}
+#glavni_dio h2{
+  font-size: 30px;
+}
+#glavni_dio p{
+  font-size: 20px;
+}
+.slike{
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.slike div{
+  padding: 10px 10px 40px;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.slike div img{
+  border-radius: 0.5rem;
+}
