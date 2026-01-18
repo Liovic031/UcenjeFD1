@@ -37,16 +37,15 @@ body {
 
 /* FONT */
 @font-face{
-    font-family: 'Monsterrat';
-    src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
 }
 body{
-  font-family: 'Monsterrat', 'Arial', sans-serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
 
 /* INDEX.HTML */
-
 .uvod{
   background-color: #2E4254;
   text-align: center;
@@ -77,4 +76,25 @@ body{
 }
 .slike div img{
   border-radius: 0.5rem;
+}
+
+
+/* ONAMA.HTML */
+.o_nama{
+  background-color: rgba(94, 94, 94, 0.274);
+  width: 90%;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px 25px;
+}
+.o_nama h2{
+  font-size: 30px;
+  color: #1CBB9D;
+}
+.o_nama p{
+  font-size: 20px;
+  max-width: 900px;
+  margin: 25px auto;
+  line-height: 30px;
 }
