@@ -34,11 +34,10 @@ body {
 }
 
 
-
 /* FONT */
 @font-face{
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 body{
   font-family: 'Montserrat', 'Arial', sans-serif;
@@ -81,12 +80,12 @@ body{
 
 /* ONAMA.HTML */
 .o_nama{
-  background-color: rgba(94, 94, 94, 0.274);
-  width: 90%;
+  background-color: rgba(94, 94, 94, 0.13);
+  width: 70%;
   border-radius: 0.5rem;
   text-align: center;
   margin: 0 auto;
-  padding: 25px 25px;
+  padding: 1px 25px 25px;
 }
 .o_nama h2{
   font-size: 30px;
@@ -97,4 +96,150 @@ body{
   max-width: 900px;
   margin: 25px auto;
   line-height: 30px;
+}
+.ljudi{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding-top: 100px;
+}
+.ljudi div{
+  width: 200px;
+  padding: 20px 50px;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.ljudi div img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #1CBB9D;
+}
+.ljudi h3{
+  color: rgb(29, 29, 29);
+}
+.ljudi p{
+  color: rgb(122, 122, 122);
+}
+
+
+/* USLUGE/INDEX.HTML */
+h2{
+  text-align: center;
+  margin: 50px auto;
+}
+.cjenik{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(94, 94, 94, 0.13);
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0px;
+  border-radius: 0.5rem;
+}
+table{
+  width: 90%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+th, td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+thead tr{
+  background-color: #1CBB9D;
+  color: rgb(27, 27, 27);
+  text-transform: uppercase;
+}
+thead tr th{
+  padding: 20px;
+  text-align: left;
+}
+tbody tr{
+  border-bottom: 1px solid rgb(59, 59, 59);
+}
+tbody tr td{
+  padding: 20px;
+}
+tbody tr td button{
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: #1CBB9D;
+  padding: 7px 15px;
+  width: 70%;
+}
+
+
+/* BLOG/INDEX.HTML */
+article{
+  width: 60%;
+  background-color: rgba(94, 94, 94, 0.13);
+  margin: 25px auto;
+  border-radius: 0.5rem;
+  padding: 1px 20px;
+  border-inline-start: 4px solid #48b4a0;
+}
+article h2{
+  text-align: left;
+  color: #48b4a0;
+}
+article p{
+  line-height: 25px;
+}
+.datum{
+  color: rgb(107, 107, 107);
+  margin-top: -40px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.kategorija{
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-style: italic;
+}
+
+
+/* GALERIJA/INDEX.HTML */
+.fotogalerija{
+  text-align: center;
+  background-color: rgba(94, 94, 94, 0.13);
+  width: 50%;
+  margin: 25px auto;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  border-radius: 0.5rem;
+}
+.fotogalerija img{
+  width: 90%;
+  border-radius: 0.5rem;
+  border: 1px solid #1CBB9D;
+}
+.fotogalerija p{
+  font-size: 15px;
+  color: rgb(109, 109, 109);
+}
+.fotogalerija button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #1CBB9D;
+  min-width: 120px;
+  max-width: 120px;
+  font-weight: bolder;
+}
+.fotogalerija h2{
+  color: #1CBB9D;
+  font-size: 25px;
+}
+.gumbovi{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 35px 12px 0px 12px;
+  gap: 30px;
 }
