@@ -248,7 +248,8 @@ article p{
 /* INFO/KONTAKT.HTML */
 .forma{
   background-color: rgba(94, 94, 94, 0.13);
-  width: 550px;
+  min-width: 350px;
+  width: 30%;
   margin: 100px auto;
   padding: 25px;
   border-radius: 0.5rem;
@@ -308,8 +309,85 @@ textarea{
 }
 
 .budzet input{
-  width: 92%;
+  width: 91%;
 }
 .budzet input[type="range"] {
   accent-color: #1CBB9D;
+}
+
+
+/* PROJEKT/INDEX.HTML */
+.projekti{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  gap: 25px;
+  margin: 30px auto;
+}
+.projekt {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 0.7rem;
+  overflow: hidden;
+  position: relative;
+  width: 325px;
+}
+.projekt img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.status{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: black;
+  background: #1CBB9D;
+}
+.projekt-content {
+  padding: 18px;
+}
+.projekt-content h3 {
+  margin: 0;
+  color: #1CBB9D;
+  font-size: 1.2rem;
+}
+.projekt-content p {
+  margin: 8px 0;
+  color: #ccc;
+}
+.projekt-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.tehnologije{
+  padding: 5px 0px;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  color: #1CBB9D;
+}
+.detalji {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration-line: underline;
+  text-decoration-color: #1CBB9D;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+.detalji:hover {
+  transform: translateX(1px);
+}
+hr{
+  border: 0.5px solid rgba(59, 59, 59, 0.349);
 }
