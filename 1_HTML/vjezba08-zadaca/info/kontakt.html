@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <section class="uvod">
+        <h1>O nama</h1>
+        <p>Upoznajte tim koji stoji iza projekta</p>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Početna</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="../usluge/index.html">Usluge</a></li>
+            <li><a href="">Projekti</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+            <li><a href="../galerija/index.html">Galerija</a></li>
+            <li class="trenutna"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <section class="forma">
+        <form action="kontakt.html" method="get">
+            <div class="osobnipodaci">
+                <div class="ime">
+                    <label for="ime">Ime i prezime</label>
+                    <input type="text" name="ime" id="ime" placeholder="Vaše ime...">
+                </div>
+                <div class="email">
+                    <label for="email">Email adresa</label>
+                    <input type="email" name="email" id="email" placeholder="email@primjer.com">
+                </div>
+            </div>
+            <div class="uslugairok">
+                <div class="vrsta">
+                    <label for="vrstausluge">Zanima me usluga:</label>
+                    <select name="vrstausluge" id="vrstausluge">
+                        <option selected="selected" value="1">Frontend Razvoj</option>
+                        <option value="2">Backend Razvoj</option>
+                        <option value="3">Servis Računala</option>
+                    </select>
+                </div>
+                <div class="rok">
+                    <label for="rokzavrsetka">Željeni rok završetka:</label>
+                    <input type="date" name="rokzavrsetka" id="rokzavrsetka">
+                </div>
+            </div>
+            <div class="budzet">
+                <label for="budzet">
+                    Planirani budžet: <span id="budzetVrijednost">1500 €</span>
+                </label>
+                <input 
+                    type="range"
+                    id="budzet"
+                    name="budzet"
+                    min="0"
+                    max="3000"
+                    step="100"
+                    value="1500"
+                >
+            </div>
+            <div class="komentar">
+                <label for="opis">Opis projekta</label>
+                <textarea name="opis" id="opis" placeholder="Recite nam nešto o vašim idejama..." style="font-family: sans-serif;"></textarea>
+            </div>
+            <button type="submit">POŠALJI UPIT</button>
+        </form>
+    </section>
+    <footer class="foot">
+        <p>&copy; 2024 Edunova, sva prava pridržana</p>
+    </footer>
+    
+</body>
+</html>

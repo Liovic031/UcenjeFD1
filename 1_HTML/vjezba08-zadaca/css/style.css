@@ -243,3 +243,73 @@ article p{
   padding: 35px 12px 0px 12px;
   gap: 30px;
 }
+
+
+/* INFO/KONTAKT.HTML */
+.forma{
+  background-color: rgba(94, 94, 94, 0.13);
+  width: 550px;
+  margin: 100px auto;
+  padding: 25px;
+  border-radius: 0.5rem;
+
+}
+.osobnipodaci, .uslugairok{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.ime, .email, .rok, .vrsta, .budzet, .komentar{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label{
+  color: #1CBB9D;
+  font-weight: bold;
+}
+input{
+  padding: 10px 20px;
+  border: 0.5px solid rgba(83, 83, 83, 0.5);
+  width: 230px;
+  border-radius: 0.5rem;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: rgb(165, 165, 165);
+}
+select{
+  padding: 10px 20px;
+  border: 0.5px solid rgba(83, 83, 83, 0.5);
+  width: 272px;
+  border-radius: 0.5rem;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: rgb(165, 165, 165);
+}
+textarea{
+  resize: vertical;
+  border: 0.5px solid rgba(83, 83, 83, 0.5);
+  color: rgb(165, 165, 165);
+  padding: 10px;
+  max-height: 150px;
+  min-height: 90px;
+  border-radius: 0.5rem;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+.forma button{
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 0.5rem;
+  background-color: #1CBB9D;
+  border: none;
+  font-weight: bolder;
+  border: 0.5px solid rgba(83, 83, 83, 0.5);
+}
+
+.budzet input{
+  width: 92%;
+}
+.budzet input[type="range"] {
+  accent-color: #1CBB9D;
+}
