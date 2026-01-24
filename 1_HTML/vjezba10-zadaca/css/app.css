@@ -1,0 +1,104 @@
+/* INDEX.HTML */
+body {
+background-color: #0e172a;
+color: #e5e7eb;
+font-family: sans-serif;
+}
+
+.top-bar,
+.top-bar ul {
+background-color: #0b0c14;
+}
+.top-bar a {
+color: #9ca3af;
+font-weight: 500;
+}
+.top-bar a:hover {
+color: #22c55e;
+}
+
+.menu-text {
+  color: #22c55e;
+  font-weight: bold;
+}
+.menu{
+  border: none;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(8, 9, 10, 0.616), rgba(0, 0, 0, 0.548)),
+    url("../img/fpv-hero.jpg") center/cover no-repeat;
+  border: none;
+  padding: 6rem 1rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #f8fafc;
+}
+.hero .lead {
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+}
+
+.callout.secondary {
+  background-color: #020617;
+  border-left: 4px solid #22c55e;
+}
+.callout.secondary h3 {
+  color: #22c55e;
+}
+
+.card {
+  background-color: #020617;
+  border: none;
+  color: #e5e7eb;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.4);
+}
+.card img {
+filter: brightness(70%);
+}
+.card:hover img {
+filter: brightness(90%);
+}
+.card h4 {
+  color: #22c55e;
+}
+
+.callout.alert {
+  background-color: #11642f;;
+  border: none;
+}
+.callout.alert a{
+  background-color: #04180b;
+  color: #cecece;
+}
+.callout.alert a:hover{
+  background-color: #22c55e;
+}
+
+.button.success {
+  background-color: #178a41;
+  color: #020617;
+  font-weight: bold;
+}
+.button.success:hover {
+  background-color: #23e66a;
+}
+.button.alert {
+  font-weight: bold;
+}
+
+hr {
+  border-color: #334155;
+}
+.cell p {
+  color: #94a3b8;
+}
+
+
+/* PROGRAM.HTML */
