@@ -1,20 +1,19 @@
 /* INDEX.HTML */
 body {
-background-color: #0e172a;
-color: #e5e7eb;
-font-family: sans-serif;
+  background-color: #0e172a;
+  color: #e5e7eb;
+  font-family: sans-serif;
 }
 
-.top-bar,
-.top-bar ul {
-background-color: #0b0c14;
+.top-bar, .top-bar ul {
+  background-color: #0b0c14;
 }
 .top-bar a {
-color: #9ca3af;
-font-weight: 500;
+  color: #9ca3af;
+  font-weight: 500;
 }
 .top-bar a:hover {
-color: #22c55e;
+  color: #22c55e;
 }
 
 .menu-text {
@@ -28,7 +27,7 @@ color: #22c55e;
 .hero {
   background:
     linear-gradient(rgba(8, 9, 10, 0.616), rgba(0, 0, 0, 0.548)),
-    url("../img/fpv-hero.jpg") center/cover no-repeat;
+    url("../img/fpv-hero.jpg") center;
   border: none;
   padding: 6rem 1rem;
 }
@@ -51,6 +50,7 @@ color: #22c55e;
 
 .card {
   background-color: #020617;
+  height: 400px;
   border: none;
   color: #e5e7eb;
   transition: transform .25s ease, box-shadow .25s ease;
@@ -60,10 +60,11 @@ color: #22c55e;
   box-shadow: 0 15px 30px rgba(0,0,0,.4);
 }
 .card img {
-filter: brightness(70%);
+  filter: brightness(70%);
+  height: 205px;
 }
 .card:hover img {
-filter: brightness(90%);
+  filter: brightness(90%);
 }
 .card h4 {
   color: #22c55e;
@@ -102,3 +103,81 @@ hr {
 
 
 /* PROGRAM.HTML */
+.orbit img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  filter: brightness(75%);
+}
+
+.orbit-caption {
+  background: rgba(2, 6, 23, 0.8);
+  color: #e5e7eb;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+}
+.accordion-title {
+  border: none;
+}
+.accordion-title:hover, .accordion-title:focus{
+  background-color: rgba(2, 6, 23, 0.8);
+  color: #22c55e;
+}
+.accordion{
+  background-color: rgba(2, 6, 23, 0.8);
+}
+.accordion-content{
+  background-color: rgba(2, 6, 23, 0.8);
+  border: none;
+}
+.accordion-content ul li{
+  color: #94a3b8;
+}
+
+/* KONTAKT.HTML */
+form {
+  background-color: #020617;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+form label {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea{
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  background-color: #0b0c14;
+  color: #e5e7eb;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+  border-color: #22c55e;
+  background-color: #0b0c14;
+}
+
+.radio-group{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  color: #e5e7eb;
+}
+form .button {
+  width: 100%;
+  font-weight: bold;
+}
+
+form .button.success {
+  background-color: #178a41;
+  color: #020617;
+}
+
+form .button.success:hover {
+  background-color: #23e66a;
+  color: #020617;
+}
