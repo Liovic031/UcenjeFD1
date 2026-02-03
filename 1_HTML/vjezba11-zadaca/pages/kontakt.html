@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="hr" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <title>Prijava</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+        <a class="navbar-brand text-success" href="../index.html">FPV</a>
+        <div class="collapse navbar-collapse show">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Početna</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/program.html">Kurikulum</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Prijava</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+        <h3 class="text-success">Prijava za FPV program</h3>
+
+        <form class="mt-4">
+
+            <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Ime">
+            <label>Ime i prezime</label>
+            </div>
+
+            <div class="form-floating mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+            <label>Email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+            <textarea class="form-control" style="height:120px"></textarea>
+            <label>Iskustvo</label>
+            </div>
+
+            <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="dron">
+            <label class="form-check-label">Racing FPV</label>
+            </div>
+
+            <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="dron">
+            <label class="form-check-label">Cinematic FPV</label>
+            </div>
+
+            <button class="btn btn-success w-100">Pošalji prijavu</button>
+
+        </form>
+        </div>
+    </div>
+    </section>
+
+    <footer class="mt-auto bg-black text-center py-3">
+        <small>© 2026 FPV Akademija</small>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

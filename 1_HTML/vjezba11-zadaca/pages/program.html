@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kurikulum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+        <a class="navbar-brand text-success" href="../index.html">FPV</a>
+        <div class="collapse navbar-collapse show">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Početna</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Kurikulum</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontakt.html">Prijava</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <section class="container my-5">
+    <h2 class="text-success mb-4">Kurikulum</h2>
+
+    <!-- ACCORDION -->
+    <div class="accordion mb-4" id="fpvAccordion">
+
+        <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#m1">
+            Sastavljanje drona <span class="badge bg-success ms-2">Novo</span>
+            </button>
+        </h2>
+        <div id="m1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                Osnove komponenti i sastavljanja FPV drona.
+            </div>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#m2">
+                Sigurnost letenja
+            </button>
+        </h2>
+        <div id="m2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                Pravila sigurnosti i zakonodavni okvir.
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- LIST GRUPA -->
+    <h4>Potrebna oprema</h4>
+    <ul class="list-group mb-4">
+        <li class="list-group-item">FPV naočale</li>
+        <li class="list-group-item">Kontroler</li>
+        <li class="list-group-item">Simulator letenja</li>
+    </ul>
+
+    <!-- MODAL -->
+    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#predavac">
+        O predavaču
+    </button>
+
+    <div class="modal fade" id="predavac">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Predavač</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    FPV pilot s višegodišnjim iskustvom.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <footer class="mt-auto bg-black text-center py-3">
+        <small>© 2026 FPV Akademija</small>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

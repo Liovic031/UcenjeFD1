@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FPV Akademija</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+        <a class="navbar-brand text-success fw-bold" href="#">FPV</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fpvNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="fpvNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Početna</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/program.html">Kurikulum</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/kontakt.html">Prijava</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero text-center py-5">
+    <div class="container">
+        <h1 class="text-success">FPV Akademija</h1>
+        <p class="lead">Nauči letjeti FPV dronovima i razvij STEM vještine budućnosti</p>
+        <a href="pages/kontakt.html" class="btn btn-success btn-lg">Prijavi se</a>
+    </div>
+    </section>
+
+    <!-- CAROUSEL -->
+    <div class="container mb-5">
+    <div id="fpvCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+            <img src="img/orbit1.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>FPV dron u letu</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/orbit2.webp" class="d-block w-100" alt="">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>FPV dron u letu</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/orbit3.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>FPV dron u letu</h5>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- CARDS -->
+    <section class="container mb-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="img/drone.jpg" class="card-img-top">
+            <div class="card-body">
+            <h5 class="card-title">Tehničke vještine</h5>
+            <p class="card-text">Sastavljanje dronova i osnove elektronike.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="img/fpv.jpg" class="card-img-top">
+            <div class="card-body">
+            <h5 class="card-title">Kognitivne sposobnosti</h5>
+            <p class="card-text">Razvoj refleksa i koncentracije.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="img/education.webp" class="card-img-top">
+            <div class="card-body">
+            <h5 class="card-title">STEM priprema</h5>
+            <p class="card-text">Povezivanje fizike, matematike i tehnologije.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- ALERT -->
+    <div class="container my-4">
+    <div class="alert alert-warning text-center">
+        🔥 Popust za rane prijave – broj mjesta je ograničen!
+    </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto bg-black text-center py-3">
+        <small>© 2026 FPV Akademija</small>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
