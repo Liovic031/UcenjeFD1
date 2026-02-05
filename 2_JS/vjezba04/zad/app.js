@@ -210,6 +210,81 @@ document.getElementById('izvedi').addEventListener('click', () => {
     }
     return;
   }
+  else if(zadatak === '9'){
+    const x = Number(a); // prebacujem string a u broj x
+    const y = Number(b); // i za ostale tri varijable to radimo
+    const z = Number(c);
+    const q = Number(d);
+    if(isNaN(x) || isNaN(y) || isNaN(z) || isNaN(q)){ 
+      rezultat.innerHTML='Jedno od unosnih polja nije broj';
+    }
+
+    //9. Zbroj većih brojeva (A i B) + (C i D)
+    if(x>=y && z>=q){
+      rezultat.innerHTML=x+z;
+    }
+    else if(x>=y && q>=z){
+      rezultat.innerHTML=x+q;
+    }
+    else if(y>=x && z>=q){
+      rezultat.innerHTML=y+z;
+    }
+    else if(y>=x && q>=z){
+      rezultat.innerHTML=y+q;
+    }
+
+    return;
+  }
+  else if(zadatak === '10'){
+    const q = Number(d);
+    if(isNaN(q)){ 
+      rezultat.innerHTML='D nije broj';
+      return;
+    }
+
+    rezultat.innerHTML= d * 10;
+
+    return;
+  }
+  else if(zadatak === '11'){
+    if(!b){
+      rezultat.innerHTML= 'Obavezan unos grada pod vrijednost B';
+    }
+    if(b.toLowerCase() === 'osijek'){
+      rezultat.innerHTML=`${b} je sjedište Edunove.`;
+    }
+    else{
+      rezultat.innerHTML=`${b} je sjedište Edunove.`;
+    }
+
+    return;
+  }
+  else if(zadatak === '12'){
+    if(!a || !b){
+      rezultat.innerHTML= 'Neispravan unos pojmova u polja A i B';
+    }
+    rezultat.innerHTML=`${a} ${b}`;
+    
+    return;
+  }
+  else if(zadatak === '13'){
+    const x = Number(a); 
+    if(isNaN(x) || x === 0){
+      rezultat.innerHTML='Greška u unosu';
+      return;
+    }
+    const y = Number(b); 
+    if(isNaN(y || y === 0)){
+      rezultat.innerHTML='Greška u unosu';
+      return;
+    }
+
+    rezultat.innerHTML=x*y;
+    
+    return;
+  }
+  
+  
 
   // ovo će se ispisati ako u HTML dodatke option za zadatak a ovdje ga ne obradite
   rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
