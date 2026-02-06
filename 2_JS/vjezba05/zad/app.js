@@ -64,7 +64,48 @@ document.getElementById('izvedi').addEventListener('click', () => {
         }
       // kraj rješavanje 3. zadatak
     break;
-
+    case '4':
+      // rješavanje 4. zadatka
+      const x = parseFloat(a);
+      const cijelibroj = parseInt(a);
+      if(!x){
+        rezultat.innerHTML = 'Niste unijeli ispravnu vrijednost';
+        return;
+      }
+      rezultat.innerHTML = Math.round((x - cijelibroj)*100);
+      //kraj rješavanja 4. zadatka
+      break;
+    case '5':
+      // rješavanje 5. zadatka
+      const br = Number(a);
+      if(isNaN(br)){
+        rezultat.innerHTML = 'Krivi unos';
+        return;
+      }
+      else if(br % 2 == 0){
+        rezultat.innerHTML = `Broj ${br} je paran.`;
+      }
+      else{
+        rezultat.innerHTML = `Broj ${br} je neparan.`;
+      }
+      //kraj rješavanja 5. zadatka
+      break;
+    case '6':
+      // rješavanje 6. zadatka
+      const voce = a.toLowerCase();
+      if (voce === 'jabuka' || voce === 'kruška' || voce === 'banana'){
+        rezultat.innerHTML = `${voce} je voće`;
+      }
+      else{
+        rezultat.innerHTML = 'Nisam siguran je li voće';
+      }
+      //kraj rješavanja 6. zadatka
+      break;
+    case '7':
+      // rješavanje 7. zadatka
+      rezultat.innerHTML = a.length;
+      //kraj rješavanja 7. zadatka
+      break;
 
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
