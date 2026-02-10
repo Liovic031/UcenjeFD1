@@ -1,44 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zadaci — Nizovi JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
 
-    <section class="kartica">
-        <div class="zadaci">
-            <label>
-                <span>Zadaci</span>
-                <select id="zadatak">
-                    <option value="1">ZADATAK 1 — Prvi i zadnji element</option>
-                    <option value="2">ZADATAK 2 — Siguran pristup elementu</option>
-                    <option value="3">ZADATAK 3 — Zamjena prva dva elementa</option>
-                    <option value="4">ZADATAK 4 — Dodavanje elementa prema duljini</option>
-                    <option value="5">ZADATAK 5 — Provjera tipa prvog elementa</option>
-                    <option value="6">ZADATAK 6 — Ukloni zadnji element bez pop()</option>
-                    <option value="7">ZADATAK 7 — Spoji dva niza bez concat()</option>
-                    <option value="8">ZADATAK 8 — Provjera rupe u nizu</option>
-                    <option value="9">ZADATAK 9 — Razdvajanje prvog i ostatka</option>
-                    <option value="10">ZADATAK 10 — Switch prema duljini niza</option>
+<body class="font-sans bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center">
+
+    <section class="w-full max-w-xl bg-slate-900 rounded-2 border border-slate-700 rounded-xl">
+        
+        <div class="p-6 border-slate-700 text-center">
+            <h1 class="text-2xl font-bold text-cyan-400">Zadaća nizovi</h1>
+            <p class="text-slate-400 mt-8">Odaberite zadatak, unesite vrijednosti u polja i pogledajte rezultat u konzoli</p>
+        </div>
+        <div class="px-6 pb-4">
+            <label class="flex flex-col gap-1">
+                <span class="text-sm text-slate-400 pl-2">Zadatak</span>
+                <select id="zadatak" class="bg-slate-950 border border-slate-600 rounded-xl p-3 focus:border-cyan-400">
+                    <option value="1">1. Prvi i zadnji element</option>
+                    <option value="2">2. Siguran pristup elementu</option>
+                    <option value="3">3. Zamjena prva dva elementa</option>
+                    <option value="4">4. Dodavanje prema duljini</option>
+                    <option value="5">5. Provjera tipa prvog elementa</option>
+                    <option value="6">6. Ukloni zadnji element bez pop()</option>
+                    <option value="7">7. Spoji dva niza bez concat()</option>
+                    <option value="8">8. Provjera rupe u nizu</option>
+                    <option value="9">9. Razdvajanje prvog i ostatka</option>
+                    <option value="10">10. Switch prema duljini niza</option>
                 </select>
             </label>
-            <button id="izvedi" class="btn" type="button">Izvrši</button>
+        </div>
+        <div class="px-6 pb-6 grid grid-cols-2 gap-4">
+            <label class="flex flex-col gap-2">
+                <span class="text-sm text-slate-400 pl-2">A</span>
+                <input id="a" type="text" class="bg-slate-950 border border-slate-600 rounded-xl p-3 focus:outline-none focus:border-cyan-400">
+            </label>
+
+            <label class="flex flex-col gap-2">
+                <span class="text-sm text-slate-400 pl-2">B</span>
+                <input id="b" type="text" class="bg-slate-950 border border-slate-600 rounded-xl p-3 focus:outline-none focus:border-cyan-400">
+            </label>
+        </div>
+        <div class="p-6 pt-0">
+            <button id="izvedi" type="button" class="w-full bg-cyan-500 hover:bg-cyan-400 rounded-xl py-3 font-semibold text-slate-900">Izvrši zadatak</button>
         </div>
 
-        <div class="unos">
-            <label class="polje">
-                <span>A</span>  
-                <input type="text" id="a">
-            </label>
-            <label class="polje">
-                <span>B</span>  
-                <input type="text" id="b">
-            </label>
-        </div>
     </section>
-    
+
     <script src="skripta.js"></script>
 </body>
 </html>
