@@ -107,6 +107,38 @@ document.getElementById('izvedi').addEventListener('click', () => {
       //kraj rješavanja 7. zadatka
       break;
 
+    case '8':
+    // rješavanje 8. zadatka
+    const doBroja = Number(a);
+    if(isNaN(doBroja)){
+      rezultat.innerHTML = 'Krivi unos';
+      return;
+    }
+    let s = '';
+    for(let i = 1; i <= doBroja; i++){
+      console.log(i + ',');
+      if(i === doBroja){
+        s += i;
+        break;
+      }
+      s += i + ',';
+    }
+    rezultat.innerHTML = s;
+    //kraj rješavanja 8. zadatka
+    break;
+
+    case '9':
+    // rješavanje 9. zadatka
+    const num = Number(a);
+    if(isNaN(num)){
+      rezultat.innerHTML = 'Krivi unos';
+      return;
+    }
+    
+    //kraj rješavanja 9. zadatka
+    break;
+
+
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
   }
