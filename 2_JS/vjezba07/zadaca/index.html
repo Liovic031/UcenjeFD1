@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Zadaci - Edunova</title>
 </head>
 <body class="bg-stone-900">
     
-    <main class="flex flex-col items-center gap-10 mt-50 m-auto bg-stone-800 text-white font-sans rounded-xl min-w-md w-3/7 p-5">
+    <main class="flex flex-col items-center gap-10 my-40 m-auto bg-stone-800 text-white font-sans rounded-xl min-w-md w-3/7 p-5">
         <header>
             <h1 class="text-center text-3xl font-bold text-green-500">Zadaci</h1>
             <p class="mt-5">Odaberite zadatak, unesite vrijednosti u polja A ili B i kliknite Izvrši.</p>
@@ -16,21 +17,28 @@
 
 
         <section class="kartica">
-            <div class="odabir mb-5">
+            <div class="odabir mb-5 flex items-center gap-2">
                 <label class="zadaci">
                     <span>Odaberite zadatak:</span>
-                    <select id="zadatak" class="bg-stone-800 border border-stone-700 focus:outline-none rounded-xl px-2 py-1 ml-2">
+                    <select id="zadatak" class="bg-stone-800 border border-stone-700 focus:outline-none rounded-xl px-2 py-1 ">
                         <option value="1">1. Izračun površine pravokutnika</option>
                         <option value="2">2. Provjera je li broj pozitivan, negativan ili nula</option>
                         <option value="3">3. Zbroj elemenata niza</option>
+                        <option value="4">4. Prosjek ocjena</option>
+                        <option value="5">5. Ispis Fibonaccijevog niza</option>
+                        <option value="6">6. Preokret stringa</option>
+                        <option value="7">7. Brojanje samoglasnika</option>
+                        <option value="8">8. Pretvorba temperature</option>
+                        <option value="9">9. Sortiranje niza</option>
+                        <option value="10">10. Kalkulator</option>
                     </select>
                 </label>
-                <button id="izvedi" class="px-3 py-1 rounded-xl border-none bg-green-500 text-stone-900 hover:bg-green-600 cursor-pointer ml-2" type="button">Izvrši</button>
+                <button id="izvedi" class="px-3 py-1 rounded-xl border-none bg-green-500 text-stone-900 hover:bg-green-600 cursor-pointer" type="button">Izvrši</button>
             </div>
             
             <div class="mb-5 italic">
                 O zadatku:
-                <p id="ozadatku"></p>
+                <p id="ozadatku">Unesite duljinu pravokutnika u A i širinu pravokutnika u B!</p>
             </div>
 
             <div class="flex flex-col gap-3">
@@ -55,7 +63,7 @@
 
         <section class="w-3/7 text-center flex flex-col gap-5 mb-5">
             <h2 class="text-2xl">Rezultat</h2>
-            <div id="rezultat" class="result" aria-live="polite">—</div>
+            <div id="rezultat" class="result break-words" aria-live="polite">—</div>
         </section>
 
     </main>
