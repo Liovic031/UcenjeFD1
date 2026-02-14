@@ -3,48 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
-<body>
-    <main class="container">
-        <header class="header">
-            <h1>Zadaci</h1>
-            <p>Odaberite zadatak, unesite vrijednosti u polja A ili B i kliknite <strong>Izvrši</strong>.</p>
+<body class="bg-stone-900">
+    <main class="flex flex-col items-center gap-10 mt-50 m-auto bg-stone-800 text-white font-sans rounded-xl min-w-md w-3/7 p-5">
+        <header>
+            <h1 class="text-center text-3xl font-bold text-green-500">Zadaci</h1>
+            <p class="mt-5">Odaberite zadatak, unesite vrijednosti u polja A ili B i kliknite Izvrši.</p>
         </header>
 
 
 
         <section class="kartica">
-            <div class="odabir">
-                <label for="" class="zadaci">
-                    <span>Odaberite zadatak</span>
-                    <select name="" id="zadatak">
-                        <option value="1">Izračun površine pravokutnika</option>
-                        <option value="2">Provjera je li broj pozitivan, negativan ili nula</option>
-                        <option value="3">Zbroj elemenata niza</option>
+            <div class="odabir mb-5">
+                <label class="zadaci">
+                    <span>Odaberite zadatak:</span>
+                    <select id="zadatak" class="bg-stone-800">
+                        <option value="1">1. Izračun površine pravokutnika</option>
+                        <option value="2">2. Provjera je li broj pozitivan, negativan ili nula</option>
+                        <option value="3">3. Zbroj elemenata niza</option>
                     </select>
                 </label>
-                <button id="izvedi" class="btn" type="button">Izvrši</button>
+                <button id="izvedi" class="px-3 py-1 rounded-xl border-none bg-green-500 text-stone-900 hover:bg-green-600 cursor-pointer ml-5" type="button">Izvrši</button>
             </div>
             
-            <div>
-                <a target="_blank" href="#" id="poveznica">Pročitaj više o temi zadatka</a>
+            <div class="mb-5" id="ozadatku">
+                Pročitaj više o temi zadatka
             </div>
 
-            <div class="unosna_polja">
-                <label class="field">
+            <div class="flex flex-col gap-3">
+                <label class="flex flex-col gap-1">
                     <span>A</span>
-                    <input id="a" type="text" />
+                    <input id="a" type="text" class="border border-stone-700 focus:outline-none focus:border-green-500 rounded-xl px-2 py-1"/>
                 </label>
 
-                <label class="field">
+                <label class="flex flex-col gap-1">
                     <span>B</span>
-                    <input id="b" type="text" />
+                    <input id="b" type="text" class="border border-stone-700 focus:outline-none focus:border-green-500 rounded-xl px-2 py-1"/>
                 </label>
 
-                <label class="field">
+                <label class="flex flex-col gap-1">
                     <span>C</span>
-                    <input id="b" type="text" />
+                    <input id="c" type="text" class="border border-stone-700 focus:outline-none focus:border-green-500 rounded-xl px-2 py-1"/>
                 </label>
             </div>
 
@@ -52,16 +53,11 @@
 
 
 
-        <section class="rezultat">
-            <h2>Rezultat</h2>
+        <section class="w-3/7 text-center flex flex-col gap-5 mb-5">
+            <h2 class="text-2xl">Rezultat</h2>
             <div id="rezultat" class="result" aria-live="polite">—</div>
         </section>
 
-
-
-        <footer class="footer">
-            <small>Predložak zadaci EDUNOVA frontend developer</small>
-        </footer>
     </main>
 
 
