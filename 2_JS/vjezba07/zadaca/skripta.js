@@ -17,14 +17,15 @@ document.getElementById('izvedi').addEventListener('click', () => {
     rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
 });
 
-document.getElementById('zadatak').addEventListener('change', (event) => {
+document.getElementById('zadatak').addEventListener('change', () => {
     const zadatak = document.getElementById('zadatak').value;
+    const ozadatku = document.getElementById('ozadatku');
    switch (zadatak) {
     case '1':
-      ozadatku.innerHTML= "O zadatku"
+      ozadatku.innerHTML= "Unesite duljinu pravokutnika u A i širinu pravokutnika u B!";
     break;
     case '2':
-      poveznica.href='https://www.enciklopedija.hr/clanak/savrseni-broj';
+      ozadatku.innerHTML= "Unesite neki broj u polje A!";
     break;
     case '3':
       poveznica.href='https://hafura.wordpress.com/2017/09/13/armstrongov-broj-ispitni-zadatak/';

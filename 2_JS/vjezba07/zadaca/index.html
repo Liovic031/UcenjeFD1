@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body class="bg-stone-900">
+    
     <main class="flex flex-col items-center gap-10 mt-50 m-auto bg-stone-800 text-white font-sans rounded-xl min-w-md w-3/7 p-5">
         <header>
             <h1 class="text-center text-3xl font-bold text-green-500">Zadaci</h1>
@@ -14,22 +15,22 @@
         </header>
 
 
-
         <section class="kartica">
             <div class="odabir mb-5">
                 <label class="zadaci">
                     <span>Odaberite zadatak:</span>
-                    <select id="zadatak" class="bg-stone-800">
+                    <select id="zadatak" class="bg-stone-800 border border-stone-700 focus:outline-none rounded-xl px-2 py-1 ml-2">
                         <option value="1">1. Izračun površine pravokutnika</option>
                         <option value="2">2. Provjera je li broj pozitivan, negativan ili nula</option>
                         <option value="3">3. Zbroj elemenata niza</option>
                     </select>
                 </label>
-                <button id="izvedi" class="px-3 py-1 rounded-xl border-none bg-green-500 text-stone-900 hover:bg-green-600 cursor-pointer ml-5" type="button">Izvrši</button>
+                <button id="izvedi" class="px-3 py-1 rounded-xl border-none bg-green-500 text-stone-900 hover:bg-green-600 cursor-pointer ml-2" type="button">Izvrši</button>
             </div>
             
-            <div class="mb-5" id="ozadatku">
-                Pročitaj više o temi zadatka
+            <div class="mb-5 italic">
+                O zadatku:
+                <p id="ozadatku"></p>
             </div>
 
             <div class="flex flex-col gap-3">
@@ -50,7 +51,6 @@
             </div>
 
         </section>
-
 
 
         <section class="w-3/7 text-center flex flex-col gap-5 mb-5">
