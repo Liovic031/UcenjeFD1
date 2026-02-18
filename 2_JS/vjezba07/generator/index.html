@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Generator Lozinke</title>
+</head>
+<body class="bg-stone-900">
+    
+    <main class="flex flex-col items-center gap-10 my-40 m-auto bg-stone-800 text-white font-sans rounded-xl min-w-md w-3/7 p-5">
+        <header>
+            <h1 class="text-center text-3xl font-bold text-green-500">Generator Lozinke</h1>
+            <p class="mt-5">Odaberite zadatak, unesite vrijednosti u polja A ili B i kliknite Izvrši.</p>
+        </header>
+
+        <section class="kartica">
+            <div class="flex flex-col gap-3">
+                <label class="flex flex-col gap-1">
+                    <span>Dužina lozinke</span>
+                    <input id="a" type="text" class="border border-stone-700 focus:outline-none focus:border-green-500 rounded-xl px-2 py-1"/>
+                </label>
+
+                <label class="flex flex-col gap-1">
+                    <span>Broj Lozinki</span>
+                    <input id="b" type="text" class="border border-stone-700 focus:outline-none focus:border-green-500 rounded-xl px-2 py-1"/>
+                </label>
+
+                <label for="velikaSlova">
+                    <span>Velika slova</span>
+                    <input type="checkbox" name="velikaSlova" id="velikaSlova">
+                </label>
+
+                <label for="malaSlova">
+                    <span>Mala slova</span>
+                    <input type="checkbox" name="malaSlova" id="malaSlova">
+                </label>
+
+                <label for="brojevi">
+                    <span>Brojevi</span>
+                    <input type="checkbox" name="brojevi" id="brojevi">
+                </label>
+
+                <label for="interpunkcijskiZnakovi">
+                    <span>Interpunkcijski znakovi</span>
+                    <input type="checkbox" name="interpunkcijskiZnakovi" id="interpunkcijskiZnakovi">
+                </label>
+
+                <label for="pocetakBroj">
+                    <span>Lozinka počinje s brojem</span>
+                    <input type="checkbox" name="pocetakBroj" id="pocetakBroj">
+                </label>
+
+                <label for="pocetakZnak">
+                    <span>Lozinka počinje s interpunkcijskim znakom</span>
+                    <input type="checkbox" name="pocetakZnak" id="pocetakZnak">
+                </label>
+
+                <label for="zavrsetakBroj">
+                    <span>Lozinka završava s brojem</span>
+                    <input type="checkbox" name="zavrsetakBroj" id="zavrsetakBroj">
+                </label>
+
+                <label for="zavrsetakZnak">
+                    <span>Lozinka završava s interpunkcijskim znakom</span>
+                    <input type="checkbox" name="zavrsetakZnak" id="zavrsetakZnak">
+                </label>
+
+                <label for="ponavljanje">
+                    <span>Lozinka ima ponavljajuće znakove</span>
+                    <input type="checkbox" name="ponavljanje" id="ponavljanje">
+                </label>
+
+                <button id="izvedi" class="px-3 py-1 rounded-xl border-none bg-green-500 text-stone-900 hover:bg-green-600 cursor-pointer" type="button">Izvrši</button>
+            </div>
+        </section>
+
+        <section class="w-3/7 text-center flex flex-col gap-5 mb-5">
+            <h2 class="text-2xl">Rezultat</h2>
+            <div id="rezultat" class="result break-words" aria-live="polite">—</div>
+        </section>
+
+    </main>
+
+    <script src="skripta.js"></script>
+</body>
+</html>
