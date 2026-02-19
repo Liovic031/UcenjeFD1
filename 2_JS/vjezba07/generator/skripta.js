@@ -155,7 +155,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
         if(zavrsetakBroj){
             if(nePonavljanje){
                 lozinka += lokalniBr[Math.floor(Math.random() * lokalniBr.length)];
-                // ne treba izbacivati znakova jer je ovo zadnji znak lozinke
+                // ne treba izbacivati znakove jer je ovo zadnji znak lozinke
             }
             else{
                 lozinka += br[Math.floor(Math.random() * br.length)];
