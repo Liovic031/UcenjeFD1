@@ -17,8 +17,7 @@ function ucitajBroj(s){
   const zadaci={
     z1:(a,b)=>{
       console.log('Zadatak 1');
-
-      console.log(typeof(a), typeof(b));
+      // početak zadatka
       const b1 = ucitajBroj(a)
       if(!b1){
         return;
@@ -36,11 +35,29 @@ function ucitajBroj(s){
       else{
         rezultat.innerHTML = razlika;
       }
-
+      //kraj zadatka
     },
     z2:(a,b)=>{
       console.log('Zadatak 2');
-
+      // početak zadatka
+      const b3 = ucitajBroj(a);
+      if(!b3){
+        return;
+      }
+      const b4 = ucitajBroj(b);
+      if(!b4){
+        return;
+      }
+      if(b3 > b4){
+        rezultat.innerHTML = b3;
+      }
+      else if(b3 === b4){
+        rezultat.innerHTML = "Brojevi su jednaki";
+      }
+      else{
+        rezultat.innerHTML = b4;
+      }
+      //kraj zadatka
     },
     z3:(a,b)=>{
       console.log('Zadatak 3');
