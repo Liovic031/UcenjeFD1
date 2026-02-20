@@ -37,6 +37,7 @@ function ucitajBroj(s){
       }
       //kraj zadatka
     },
+
     z2:(a,b)=>{
       console.log('Zadatak 2');
       // početak zadatka
@@ -59,19 +60,65 @@ function ucitajBroj(s){
       }
       //kraj zadatka
     },
+    
     z3:(a,b)=>{
       console.log('Zadatak 3');
+      // početak zadatka
+      const broj = ucitajBroj(a);
+      if(!broj){ return; }
 
+      if(!b){
+        rezultat.innerHTML = 'Unesite boju u polje B';
+        return;
+      }
+
+      let html = '';
+
+      for(let i = 1; i <= broj; i++){
+        if(i % 2 === 0){
+          html += `<div style="padding:10px; background:${b}; margin:4px 0;">Div ${i}</div>`;
+        } else {
+          html += `<div style="padding:10px; background:#eee; margin:4px 0;">Div ${i}</div>`;
+        }
+      }
+      rezultat.innerHTML = html;
+      //kraj zadatka
     },
+
     z4:(a,b)=>{
       console.log('Zadatak 4');
-
+      // početak zadatka
+      if(a === '' && b === ''){ 
+        rezultat.innerHTML = '🌟🔥'; 
+        return; 
+      } 
+      rezultat.innerHTML = 'Ostavite oba polja prazna za prikaz emojija.';
+      //kraj zadatka
     },
+
     z5:(a,b)=>{
       console.log('Zadatak 5');
+      // početak zadatka
+      if(!a){
+        rezultat.innerHTML = 'Unesite tekst u polje A.';
+        return;
+      }
 
+      let noviString = '';
+
+      for(let i = 0; i < a.length; i++){
+        if(a[i] >= 'a' && a[i] <= 'z'){
+          noviString += a[i].toUpperCase();
+        } else if(a[i] >= 'A' && a[i] <= 'Z'){
+          noviString += a[i].toLowerCase();
+        } else {
+          noviString += a[i];
+        }
+      }
+      rezultat.innerHTML = noviString;
+      //kraj zadatka
     }
-    // ovdje dodajemo nove zadatke
+        // ovdje dodajemo nove zadatke
   }
 
 
