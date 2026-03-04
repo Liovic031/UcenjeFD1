@@ -7,3 +7,4 @@ It includes HTML, CSS, JavaScript and React practice projects, focusing on build
 
 - Exercises are organized by topic (HTML, CSS, JS)
 - Open `index.html` files in your browser to try each project
+- https://edunova5.origo.hr/
