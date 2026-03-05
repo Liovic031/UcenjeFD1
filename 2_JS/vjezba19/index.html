@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <p>Trenutni broj je</p>
+        <h1>
+            {{brojac}}
+        </h1>
+        <button @click="povecaj">Povećaj</button>
+        <button @click="smanji" style="margin-left: 10px;">Smanji</button>
+        <div @click="promjeni" style="width: 200px; height: 150px; background-color: brown; color: white; text-align: center;" id="gumb">
+            Klikni me
+        </div>
+        <button @click="udvostruci">Udvostruči</button>
+        <button @click="dvostrukoSmanji">Dvostruko smanji</button>
+    </div>
+
+    <script src="vue.3.5.29.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
