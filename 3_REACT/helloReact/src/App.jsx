@@ -1,14 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import { Container } from 'react-bootstrap'
 import react from './assets/react.svg'
-import Table from 'react-bootstrap/Table';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Modal from 'react-bootstrap/Modal';
 import './App.css'
+import { Button, Card, CardLink, Container, Modal, Nav, Navbar, NavDropdown, Table } from 'react-bootstrap'
 
 function App() {
 
@@ -16,7 +9,7 @@ function App() {
   return (
 
     <Container>
-
+      <CardLink></CardLink>
       <a href="moduli/index.html">Moduli</a>
 
       <hr />

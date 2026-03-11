@@ -3,8 +3,5 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    {enableJsx:true} // dodavanjem ovog se sami dodaju import prilikom unosa componenti
-  ],
+  plugins: [react()],
 })
