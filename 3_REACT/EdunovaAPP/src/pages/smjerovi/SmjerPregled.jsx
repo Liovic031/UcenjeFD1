@@ -1,8 +1,31 @@
+import { useEffect, useState } from "react"
+import SmjerService from "../../services/smjerovi/SmjerService"
 
-export default function SmjerPregled(){
-    return(
+export default function SmjerPregled() {
+
+
+    const [smjerovi, setSmjerovi] = useState([])
+
+
+    useEffect(() => {
+        ucitajSmjerove()
+    }, [])
+
+    async function ucitajSmjerove() {
+        await SmjerService.get().then((odgovor) => {
+            setSmjerovi(odgovor.data)
+        })
+    }
+
+
+
+    return (
         <>
-            Ovdje će se vidjeti smjerovi 
+            <ul>
+                {smjerovi && smjerovi.map((smjer) => (
+                    <li>{smjer.naziv}</li>
+                ))}
+            </ul>
         </>
     )
 }
