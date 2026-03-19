@@ -52,9 +52,7 @@ export default function SmjerPregled() {
                                 fixedDecimalScale
                                 />
                             </td>
-                            <td>
-                                <FormatDatuma datum={smjer.datumPokretanja} />
-                            </td>
+                            <td><FormatDatuma datum={smjer.datumPokretanja} /></td>
                             <td>
                                 <GrValidate 
                                 size={25}
