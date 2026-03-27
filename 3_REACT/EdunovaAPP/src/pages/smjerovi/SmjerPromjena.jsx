@@ -12,7 +12,7 @@ export default function SmjerPromjena() {
         const [aktivan, setAktivan] = useState(false)
 
         async function ucitajSmjer(){
-            await SmjerService.getBySifra(params.sifra).then((odgovor)=>{
+            await SmjerService.getBySifra(params.sifra, smjer).then((odgovor)=>{
 
                 const s = odgovor.data
                 // po potrebi prilagođavam podatke
