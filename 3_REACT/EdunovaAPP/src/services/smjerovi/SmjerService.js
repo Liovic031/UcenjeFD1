@@ -26,12 +26,18 @@ function nadiIndex(sifra){
     return smjerovi.findIndex(s => s.sifra === parseInt(sifra))
 }
 
+// 4/4 Delete of CRUD
+async function obrisi(sifra) {
+    const index = nadiIndex(sifra)
+    smjerovi.splice(index,1)
+}
 
 
 export default{
     get,
     dodaj,
     getBySifra,
-    promjeni
+    promjeni,
+    obrisi
 }
 

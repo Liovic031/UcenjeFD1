@@ -25,6 +25,15 @@ export default function SmjerPregled() {
         })
     }
 
+    //brisanje
+    async function obrisi(sifra) {
+        if(!confirm('sigurno obrisati')){
+            return
+        }
+        await SmjerService.obrisi(sifra)
+        ucitajSmjerove()
+    }
+
 
 
     return (
@@ -70,6 +79,8 @@ export default function SmjerPregled() {
                             </td>
                             <td>
                                 <Button onClick={()=>{navigate(`/smjerovi/${smjer.sifra}`)}}>Promjena</Button>
+                                &nbsp;&nbsp;
+                                <Button variant="danger" onClick={()=>{obrisi(smjer.sifra)}}>Obriši</Button>
                             </td>
                         </tr>
                     ))}
